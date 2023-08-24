@@ -1,10 +1,11 @@
 {
     "scripts": {
         "dev": "npm run dev:flask & npm run dev:tailwind",
-        "dev:flask": "nodemon --watch templates -e html -x \"flask run --reload\"",
-        "dev:tailwind": "npx tailwindcss -i ./static/css/input.css -o ./static/dist/css/output.css --watch"
+        "dev:flask": "nodemon --watch /app/templates -e html -x \"flask run --reload --debug\"",
+        "dev:tailwind": "npx tailwindcss -i ./app/static/css/input.css -o ./app/static/dist/css/output.css --watch"
     },
     "dependencies": {
+        "flowbite": "^1.8.1",
         "nodemon": "^3.0.1",
         "tailwindcss": "^3.3.3"
     }

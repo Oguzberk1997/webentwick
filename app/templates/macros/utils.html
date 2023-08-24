@@ -1,5 +1,5 @@
 {% macro render_html_attributes(kwargs) -%}
     {% for key, value in kwargs.items() %}
-        {{ key }}={{ value }}
+        {{ key }}="{{ value }}"
     {%- endfor -%}
 {%- endmacro %}

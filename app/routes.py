@@ -3,7 +3,7 @@ from flask_login import logout_user, login_required, login_user, current_user
 
 from app import app, db
 from app.models import User
-from app.forms import SigninForm, RegistrierungsFormular
+from app.forms import SigninForm, SignupForm
 
 
 @app.route("/")
@@ -39,7 +39,7 @@ def signup():
     if current_user.is_authenticated:
         return redirect(url_for("index"))
 
-    form = RegistrierungsFormular()
+    form = SignupForm()
 
     if form.validate_on_submit():
         if not User.query.filter_by(email=form.email.data).first():

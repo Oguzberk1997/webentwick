@@ -54,18 +54,8 @@ Wenn du während der Entwicklung die Live-Neuladung für die Frontend-Oberfläch
 
 ## Test Login-Daten
 
-Benutzer:
-
-```
-benutzer@example.com
-
-```
-
-Passwort:
-
-```
-passwort123
-```
+Benutzer: `benutzer@example.com`
+Passwort:`passwort123`
 
 ## Entwicklung
 

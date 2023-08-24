@@ -9,3 +9,11 @@ Für diese drei Arten von Veranstaltungen haben wir zunächst Beispielmuster ers
 Diese Muster können anschließend gemäß den individuellen Kundenwünschen angepasst werden. Es ist dabei besonders wichtig, die zentralen Eckpunkte der Feier zu berücksichtigen. Zudem spielt der Veranstaltungsort eine entscheidende Rolle, da Aspekte wie Catering, DJs, Fotografen und die Örtlichkeit eng damit verknüpft sind. Wenn zum Beispiel die Planung einer Hochzeitsfeier ansteht, werden die wesentlichen Anforderungen und Standards einer Hochzeit beispielhaft erläutert. 
 
 Wir freuen uns darauf, Ihnen dabei zu helfen, Ihre Traumveranstaltung zu gestalten und umzusetzen!
+
+## Entwicklung
+
+### Frontendgestaltung
+
+- wir haben uns entscheidende statt Bootstrap-Flask tailwind css zu nutzten [todo: begründung]
+[todo: installation von tailwind]
+

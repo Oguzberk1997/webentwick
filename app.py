@@ -13,4 +13,4 @@ from db import db, insert_sample  # (1.)
 @app.route('/index')
 @app.route('/')
 def index():
-    return "Hello, World!"
+    return render_template("base.html")

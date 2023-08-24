@@ -1,7 +1,6 @@
 {% macro render_field(field) -%}
     {% if field.type == 'CSRFTokenField' %}
-        {{
-        field }}
+        {{ field }}
         {% if field.errors %}<div class="warning">You have submitted an invalid CSRF token</div>{% endif %}
     {% elif field.type == 'HiddenField' %}
         {{ field }}

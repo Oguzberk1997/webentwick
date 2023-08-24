@@ -1,12 +1,24 @@
 {% from "macros/field.html" import render_field %}
 {% extends "base-layout.html" %}
 {% block main_content %}
-    <section class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
-        <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-            <h1 class="text-xl font-bold text-gray-900 md:text-2xl dark:text-white">Neues Event</h1>
-            <form method="post" class="space-y-4 md:space-y-6">
-                {% for field in form %}{{ render_field(field) }}{% endfor %}
-            </form>
+    <section class="p-4 w-full max-w-screen-lg bg-white rounded-lg shadow dark:border dark:bg-gray-800 dark:border-gray-700 sm:p-8">
+        <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Neues Event</h3>
+            <a href="{{ url_for("my_events") }}">{% include "icons/close.html" %}</a>
         </div>
+        <form method="post">
+            {{ render_field(form.csrf_token) }}
+            <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                <div>{{ render_field(form.event_type) }}</div>
+                <div>{{ render_field(form.name) }}</div>
+                <div class="sm:col-span-2">{{ render_field(form.description) }}</div>
+                <div>{{ render_field(form.start) }}</div>
+                <div>{{ render_field(form.end) }}</div>
+                <div>{{ render_field(form.food_wish) }}</div>
+                <div>{{ render_field(form.number_of_attendants) }}</div>
+                <div >{{ render_field(form.dj) }}</div>
+            </div>
+            {{ render_field(form.submit) }}
+        </form>
     </section>
 {% endblock %}

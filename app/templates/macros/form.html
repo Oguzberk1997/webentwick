@@ -1,0 +1,6 @@
+
+{% macro render_simple_form(form) -%}
+<form method="post" class="space-y-4 md:space-y-6">
+  {% for field in form %}{{ render_field(field) }}{% endfor %}
+</form>
+{% endif %} {%- endmacro %}

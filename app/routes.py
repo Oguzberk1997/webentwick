@@ -2,7 +2,6 @@
 from typing import List, cast
 from flask import flash, jsonify, request, url_for, redirect, render_template, session
 from flask_login import logout_user, login_required, login_user, current_user
-from sqlalchemy.orm import events
 from app import app, db
 from app.models import DJ, Event, EventType, Location, User
 from app.forms import EventForm, SigninForm, SignupForm

@@ -1,6 +1,6 @@
 # Contents of this repository
 
-You are on the **`html+css`** branch of this repository. It contains example code from the "[Introduction to HTML and CSS](https://hwrberlin.github.io/fswd/09-html-css.html)" session.
+You are on the **`ui`** branch of this repository. It contains example code from the "[User interfaces with WTForms and Bootstrap](https://hwrberlin.github.io/fswd/11-user-interfaces.html)" session.
 
 ## Steps to execute the example code
 
@@ -36,11 +36,3 @@ Press CTRL+C to quit
 **Step 5:** visit <http://127.0.0.1:5000/insert/sample> to populate the app's database with some sample data.
 
 **Step 6:** visit <http://127.0.0.1:5000/> to view the landing page.
-
-**Step 7:** visit the following pages to display the examples of this session:
-
-+ <http://127.0.0.1:5000/faq/>: FAQ page styled with CSS
-+ <http://127.0.0.1:5000/faq/alt>: FAQ page with alternative color palette
-+ <http://127.0.0.1:5000/faq/none>: FAQ page without CSS
-+ <http://127.0.0.1:5000/ex/>: CSS "Hello, World" example
-+ <http://127.0.0.1:5000/ex/2>: CSS "layout grid" example

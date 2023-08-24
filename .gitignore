@@ -7,5 +7,10 @@ venv/
 # Ignore instance folder (used by Flask web app, e.g., for SQLite database)
 instance/
 
+node_modules/
+pnpm-lock.yaml
+
 # Generated files for Front end
 static/dist
+
+

@@ -1,7 +1,7 @@
 {
     "scripts": {
         "dev": "npm run dev:flask & npm run dev:tailwind",
-        "dev:flask": "nodemon -e html -x \"flask run --reload\"",
+        "dev:flask": "nodemon --watch templates -e html -x \"flask run --reload\"",
         "dev:tailwind": "npx tailwindcss -i ./static/css/input.css -o ./static/dist/css/output.css --watch"
     },
     "dependencies": {

@@ -65,6 +65,7 @@ def new_event():
 @event_access_required  # Benutzer muss berechtigt sein, dieses Event anzuzeigen
 def view_event(id):
     event = db.session.get(Event, id)
+    event.dj = db.session.get(DJ, event.dj)
 
     return render_template("view-event.html", event=event)
 

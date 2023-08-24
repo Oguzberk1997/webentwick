@@ -1,10 +1,37 @@
 {% extends "base-layout.html" %}
 {% block main_content %}
-    <section class="p-4 w-full max-w-screen-2xl bg-white rounded-lg shadow dark:border dark:bg-gray-800 dark:border-gray-700 sm:p-8">
-        <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ event.name }}</h3>
+    <section class="relative max-w-xl p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
+        <div class="flex justify-between mb-4 rounded-t sm:mb-5">
+            <div class="text-lg text-gray-900 md:text-xl dark:text-white">
+                <h3 class="font-semibold ">{{ event.name }}</h3>
+            </div>
             <a href="{{ url_for("my_events") }}">{% include "icons/close.html" %}</a>
         </div>
-        <div class="grid gap-4 mb-4 sm:grid-cols-2"></div>
+        <dl>
+            <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Beschreibung</dt>
+            <dd class="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">
+                {{ event.description }}
+            </dd>
+            <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Veranstaltungstyp</dt>
+            <dd class="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">
+                {{ event.event_type.value }}
+            </dd>
+            <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Zeitraum</dt>
+            <dd class="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">
+                {{ event.start }} - {{ event.end }}
+            </dd>
+            <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Veranstallungsort</dt>
+            <dd class="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">
+                {{ event.location.value }}
+            </dd>
+            <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Essenswunsch</dt>
+            <dd class="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">
+                {{ event.food_wish }}
+            </dd>
+            <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Anzahl an Gästen</dt>
+            <dd class="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">
+                {{ event.number_of_attendants }}
+            </dd>
+        </dl>
     </section>
 {% endblock %}

@@ -10,7 +10,3 @@ instance/
 node_modules/
 pnpm-lock.yaml
 
-# Generated files for Front end
-static/dist
-
-

@@ -12,12 +12,9 @@
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                             {% include "icons/search.svg" %}
                         </div>
-                        {{ render_input(placeholder='Suchen noch', required="") }}
-                        <!-- <input type="text" -->
-                        <!--        id="simple-search" -->
-                        <!--        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-10 p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" -->
-                        <!--        placeholder="Suchen [noch nicht implementiert]" -->
-                        <!--        required=""> -->
+                        <input id="simple-search"
+                               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-10 p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                               placeholder="Suchen [noch nicht implementiert]">
                     </div>
                 </form>
             </div>
@@ -60,13 +57,6 @@
                                      class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
                                     <ul class="py-1 text-sm"
                                         aria-labelledby="event-{{ loop.index }}-dropdown-button">
-                                        <li>
-                                            <a href="#"
-                                               class="flex w-full items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-gray-700 dark:text-gray-200">
-                                                {% include "icons/edit.svg" %}
-                                                Bearbeiten
-                                            </a>
-                                        </li>
                                         <li>
                                             <a href="{{ url_for("view_event", id = event.id) }}"
                                                class="flex w-full items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-gray-700 dark:text-gray-200">

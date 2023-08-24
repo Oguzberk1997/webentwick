@@ -11,15 +11,6 @@ app.config.from_mapping(
 app.cli.add_command(db.init_db)
 app.teardown_appcontext(db.close_db_con)
 
-
-@app.route('/get', methods=['GET'])
-@app.route('/insert', methods=['POST'])
-def get_insert():
-	if request.method == 'GET':
-		pass
-	elif request.method == 'POST':
-		pass
-
 @app.route('/')
 def index():
 	return redirect(url_for('get_lists'))

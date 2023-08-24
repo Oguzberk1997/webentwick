@@ -1,6 +1,6 @@
 # Contents of this repository
 
-You are on the **`intro`** branch of this repository. It contains example code from the *"[intro to full-stack web development with Flask](https://hwrberlin.github.io/fswd/02-fswd-intro.html)"* session.
+You are on the **`intro`** branch of this repository. It contains example code from the "[Intro to full-stack web development with Flask](https://hwrberlin.github.io/fswd/02-fswd-intro.html)" session.
 
 ## Steps to execute the example code
 

@@ -33,14 +33,14 @@ Press CTRL+C to quit
  * Restarting with stat
 ```
 
-**Step 5:** visit [http://127.0.0.1:5000/insert/sample](http://127.0.0.1:5000/insert/sample) to populate the app's database with some sample data.
+**Step 5:** visit <http://127.0.0.1:5000/insert/sample> to populate the app's database with some sample data.
 
-**Step 6:** visit [http://127.0.0.1:5000/](http://127.0.0.1:5000/) to view the landing page.
+**Step 6:** visit <http://127.0.0.1:5000/> to view the landing page.
 
 **Step 7:** visit the following pages to display the examples of this session:
 
-+ [http://127.0.0.1:5000/faq/](http://127.0.0.1:5000/faq/): FAQ page styled with CSS
-+ [http://127.0.0.1:5000/faq/alt](http://127.0.0.1:5000/faq/alt): FAQ page with alternative color palette
-+ [http://127.0.0.1:5000/faq/none](http://127.0.0.1:5000/faq/none): FAQ page without CSS
-+ [http://127.0.0.1:5000/ex/](http://127.0.0.1:5000/ex/): CSS "Hello, World" example
-+ [http://127.0.0.1:5000/ex/2](http://127.0.0.1:5000/ex/2): CSS "layout grid" example
++ <http://127.0.0.1:5000/faq/>: FAQ page styled with CSS
++ <http://127.0.0.1:5000/faq/alt>: FAQ page with alternative color palette
++ <http://127.0.0.1:5000/faq/none>: FAQ page without CSS
++ <http://127.0.0.1:5000/ex/>: CSS "Hello, World" example
++ <http://127.0.0.1:5000/ex/2>: CSS "layout grid" example

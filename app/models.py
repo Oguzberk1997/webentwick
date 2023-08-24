@@ -42,6 +42,21 @@ class Event(db.Model):
     dj = db.Column(db.Integer, db.ForeignKey("djs.id"), nullable=True)
     number_of_attendants = db.Column(db.Integer, nullable=False)
 
+    def serialize(self):
+        return {
+            "id": self.id,
+            "created_by": self.created_by,
+            "event_type": self.event_type.value,
+            "name": self.name,
+            "description": self.description,
+            "start": self.start.isoformat(),
+            "end": self.end.isoformat(),
+            "location": self.location.value,
+            "food_wish": self.food_wish,
+            "dj": self.dj,
+            "number_of_attendants": self.number_of_attendants,
+        }
+
 
 # Benutzermodell mit Authentifizierung
 class User(db.Model, UserMixin):

@@ -1,7 +1,8 @@
 # Importieren der benötigten Module und Klassen
-from typing import cast
-from flask import flash, request, url_for, redirect, render_template, session
+from typing import List, cast
+from flask import flash, jsonify, request, url_for, redirect, render_template, session
 from flask_login import logout_user, login_required, login_user, current_user
+from sqlalchemy.orm import events
 from app import app, db
 from app.models import DJ, Event, EventType, Location, User
 from app.forms import EventForm, SigninForm, SignupForm
@@ -148,6 +149,12 @@ def signout():
     flash("Sie wurden abgemeldet", "success")  # Zeige Erfolgsmeldung an
     return redirect(url_for("index"))
 
+# Schnittstelle für Events
+@app.route("/api/events")
+@login_required  # Benutzer muss angemeldet sein, um abzumelden
+def get_events():
+    events = cast(List[Event], current_user.events)
+    return jsonify([event.serialize() for event in events])
 
 # Testroute zum Anzeigen von Toast-Nachrichten
 @app.route("/test/toasts")

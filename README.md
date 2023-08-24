@@ -52,6 +52,21 @@ Wenn du während der Entwicklung die Live-Neuladung für die Frontend-Oberfläch
    npx run dev
    ```
 
+## Test Login-Daten
+
+Benutzer:
+
+```
+benutzer@example.com
+
+```
+
+Passwort:
+
+```
+passwort123
+```
+
 ## Entwicklung
 
 Implementierungsstatus:

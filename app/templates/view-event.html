@@ -1,0 +1,10 @@
+{% extends "base-layout.html" %}
+{% block main_content %}
+    <section class="p-4 w-full max-w-screen-2xl bg-white rounded-lg shadow dark:border dark:bg-gray-800 dark:border-gray-700 sm:p-8">
+        <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ event.name }}</h3>
+            <a href="{{ url_for("my_events") }}">{% include "icons/close.html" %}</a>
+        </div>
+        <div class="grid gap-4 mb-4 sm:grid-cols-2"></div>
+    </section>
+{% endblock %}

@@ -1,6 +1,6 @@
 # Contents of this repository
 
-You are on the **`ui`** branch of this repository. It contains example code from the "[User interfaces with WTForms and Bootstrap](https://hwrberlin.github.io/fswd/11-user-interfaces.html)" session.
+You are on the **`sqlalchemy`** branch of this repository. It contains example code from the "[Relational databases with Flask-SQLAlchemy](https://hwrberlin.github.io/fswd/13-sqlalchemy.html)" session.
 
 ## Steps to execute the example code
 

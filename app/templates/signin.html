@@ -1,33 +1,29 @@
 {% from "macros/field.html" import render_field %}
 {% extends 'base-layout.html' %}
 {% block main_content %}
-    <section class="bg-gray-50 dark:bg-gray-900">
-        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-            <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
-                <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-                    <h1 class="text-xl font-bold text-gray-900 md:text-2xl dark:text-white">
-                        {% if not is_signup %}
-                            Anmelden
-                        {% else %}
-                            Registrieren
-                        {% endif %}
-                    </h1>
-                    <form method="post" class="space-y-4 md:space-y-6">
-                        {% for field in form %}{{ render_field(field) }}{% endfor %}
-                    </form>
-                    {% if not is_signup %}
-                        <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                            Du hast noch keinen Account? <a href="/signup"
+    <section class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+        <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+            <h1 class="text-xl font-bold text-gray-900 md:text-2xl dark:text-white">
+                {% if not is_signup %}
+                    Anmelden
+                {% else %}
+                    Registrieren
+                {% endif %}
+            </h1>
+            <form method="post" class="space-y-4 md:space-y-6">
+                {% for field in form %}{{ render_field(field) }}{% endfor %}
+            </form>
+            {% if not is_signup %}
+                <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                    Du hast noch keinen Account? <a href="/signup"
     class="font-medium text-primary-600 hover:underline dark:text-primary-500">Registrieren</a>
-                        </p>
-                    {% else %}
-                        <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                            Du hast bereits einen Account? <a href="/signin"
+                </p>
+            {% else %}
+                <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                    Du hast bereits einen Account? <a href="/signin"
     class="font-medium text-primary-600 hover:underline dark:text-primary-500">Anmelden</a>
-                        </p>
-                    {% endif %}
-                </div>
-            </div>
+                </p>
+            {% endif %}
         </div>
     </section>
 {% endblock %}

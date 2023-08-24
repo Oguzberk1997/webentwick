@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="h-full dark">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,14 +12,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
         {% block head %}{% endblock %}
     </head>
-    <body>
+    <body class="h-full flex flex-col bg-gray-100 dark:bg-gray-900">
         {% block nav_bar %}
-            {% include 'nav_bar.html' %}
+            {% include 'nav-bar.html' %}
         {% endblock %}
         {% block toasts %}
             {% include "toasts.html" %}
         {% endblock %}
-        <main>
+        <main class="flex-auto grid place-items-center px-6 py-24 sm:py-32 lg:px-8">
             {% block main_content %}{% endblock %}
         </main>
     </body>

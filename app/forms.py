@@ -1,6 +1,31 @@
 from flask_wtf import FlaskForm
-from wtforms import EmailField, PasswordField, SubmitField
+from wtforms.fields import (
+    DateTimeLocalField,
+    EmailField,
+    PasswordField,
+    SelectField,
+    StringField,
+    SubmitField,
+    TextAreaField,
+)
 from wtforms.validators import EqualTo, InputRequired, Length, DataRequired
+
+from app.models import EventType
+
+
+class NewEventForm(FlaskForm):
+    event_type = SelectField(
+        "Event type",
+        description="todo!",
+        choices=[
+            (name, member.value) for name, member in EventType.__members__.items()
+        ],
+    )
+    name = StringField("Name", validators=[InputRequired(), Length(min=3, max=128)])
+    description = TextAreaField("Description")
+    start = DateTimeLocalField("Start", format='%Y-%m-%dT%H:%M')
+    end = DateTimeLocalField("End", format='%Y-%m-%dT%H:%M')
+    submit = SubmitField("Erstellen")
 
 
 class SigninForm(FlaskForm):

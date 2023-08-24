@@ -7,7 +7,7 @@ app = Flask(__name__, instance_relative_config=True)
 app.config.from_mapping(
     SECRET_KEY="secret_key_just_for_dev_environment",
     PASSWORD_SALT=b"$2b$12$kCXSB0DDlpyZ02nOPPsN3.",
-    SQLALCHEMY_DATABASE_URI="sqlite:///todos.sqlite",
+    SQLALCHEMY_DATABASE_URI="sqlite:///data.sqlite",
 )
 
 db = SQLAlchemy(app)

@@ -1,7 +1,8 @@
+from datetime import datetime
 import click
 
 from app import app, db
-from app.models import User
+from app.models import Event, EventType, User
 
 
 @click.command("init-db")
@@ -20,7 +21,16 @@ def insert_sample_data():
     user1 = User(id=1, email="max@musterman.de")
     user1.password = "1234"
 
-    db.session.add_all([user1])
+    event1 = Event(
+        event_type=EventType.WEEDING,
+        name="Test event",
+        description="todo!",
+        start=datetime(2023, 8, 28, 8),
+        end=datetime(2023, 8, 28, 16),
+        created_by=user1.id,
+    )
+
+    db.session.add_all([user1, event1])
     db.session.commit()
 
     click.echo("Inserted sample data.")

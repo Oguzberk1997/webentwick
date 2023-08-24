@@ -135,3 +135,5 @@ def ex(id):
         return render_template('ex1.html')
     elif id == 2:
         return render_template('ex2.html')
+    else:
+        abort(404)

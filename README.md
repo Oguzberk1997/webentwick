@@ -2,9 +2,9 @@
 
 Willkommen bei Code Reminduz!
 
-Unser Fokus liegt auf der Konzeption und Planung von Musterveranstaltungen. Dazu gehören Hochzeiten, Verlobungsfeiern und Geburtstage, die über unsere Website geplant und durchgeführt werden können. Für diese drei Arten von Veranstaltungen haben wir zunächst Beispielvorlagen erstellt, die auf der Website angezeigt werden. Diese Vorlagen können dann entsprechend den individuellen Kundenpräferenzen angepasst werden. Es ist wichtig, die zentralen Aspekte der Feier zu berücksichtigen, und der Veranstaltungsort spielt eine entscheidende Rolle, da Elemente wie Catering, DJs, Fotografen und die Location eng damit verbunden sind. Wenn es sich zum Beispiel um die Planung einer Hochzeitsfeier handelt, werden die wesentlichen Anforderungen und Standards einer Hochzeit veranschaulicht.
+Der Fokus von der Konzeption und Planung liegt bei Musterveranstaltungen. Dazu gehören Hochzeiten, Verlobungsfeiern und Geburtstage, die über die Website geplant und durchgeführt werden können. Für diese drei Arten von Veranstaltungen wurden zunächst Beispielvorlagen erstellt, die auf der Website angezeigt werden. Diese Vorlagen können dann entsprechend den individuellen Kundenpräferenzen angepasst werden. Es ist wichtig, die zentralen Aspekte der Feier zu berücksichtigen, und der Veranstaltungsort spielt eine entscheidende Rolle, da Elemente wie Catering, DJs, Fotografen und die Location eng damit verbunden sind. Wenn es sich zum Beispiel um die Planung einer Hochzeitsfeier handelt, werden die wesentlichen Anforderungen und Standards einer Hochzeit veranschaulicht.
 
-Wir freuen uns darauf, dich bei der Gestaltung und Umsetzung deiner Traumveranstaltung zu unterstützen!
+Ich freue mich darauf, dich bei der Gestaltung und Umsetzung deiner Traumveranstaltung zu unterstützen!
 
 ## Einrichtungshilfe
 

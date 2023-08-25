@@ -76,7 +76,7 @@ Implementierungsstatus:
 
 ### Highlights des Frontend-Designs
 
-Anstatt Bootstrap-Flask habe ich uns für die Verwendung von Tailwind CSS mit Flowbite entschieden. Diese Wahl wurde getroffen, um die modernen und anpassbaren Designkomponenten von Tailwind CSS zu nutzen. Flowbite erleichtert den Entwicklungsprozess, indem es vorgefertigte Komponenten bietet, die nahtlos in Tailwind CSS integriert werden und so zu einer noch polierteren Benutzeroberfläche führen.
+Anstatt Bootstrap-Flask habe ich für die Verwendung von Tailwind CSS mit Flowbite entschieden. Diese Wahl wurde getroffen, um die modernen und anpassbaren Designkomponenten von Tailwind CSS zu nutzen. Flowbite erleichtert den Entwicklungsprozess, indem es vorgefertigte Komponenten bietet, die nahtlos in Tailwind CSS integriert werden und so zu einer noch polierteren Benutzeroberfläche führen.
 
 ### Highlights des Backend-Designs
 

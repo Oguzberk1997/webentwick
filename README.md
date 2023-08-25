@@ -76,11 +76,11 @@ Implementierungsstatus:
 
 ### Highlights des Frontend-Designs
 
-Anstatt Bootstrap-Flask haben wir uns für die Verwendung von Tailwind CSS mit Flowbite entschieden. Diese Wahl wurde getroffen, um die modernen und anpassbaren Designkomponenten von Tailwind CSS zu nutzen. Flowbite erleichtert den Entwicklungsprozess, indem es vorgefertigte Komponenten bietet, die nahtlos in Tailwind CSS integriert werden und so zu einer noch polierteren Benutzeroberfläche führen.
+Anstatt Bootstrap-Flask habe ich uns für die Verwendung von Tailwind CSS mit Flowbite entschieden. Diese Wahl wurde getroffen, um die modernen und anpassbaren Designkomponenten von Tailwind CSS zu nutzen. Flowbite erleichtert den Entwicklungsprozess, indem es vorgefertigte Komponenten bietet, die nahtlos in Tailwind CSS integriert werden und so zu einer noch polierteren Benutzeroberfläche führen.
 
 ### Highlights des Backend-Designs
 
-Wir haben bcrypt zur Passworthash-Erstellung anstelle von Standard-Hashing-Methoden verwendet. Diese Entscheidung wurde getroffen, um die Sicherheit zu erhöhen, indem ein robustes Passworthashing-Verfahren integriert wird, das Salz und mehrere Hashing-Runden verwendet. Bcrypt ist allgemein anerkannt für seine Effektivität, Benutzerpasswörter vor verschiedenen Arten von Angriffen wie Brute-Force- und Regenbogentabellen-Angriffen zu schützen.
+Ich habe bcrypt zur Passworthash-Erstellung anstelle von Standard-Hashing-Methoden verwendet. Diese Entscheidung wurde getroffen, um die Sicherheit zu erhöhen, indem ein robustes Passworthashing-Verfahren integriert wird, das Salz und mehrere Hashing-Runden verwendet. Bcrypt ist allgemein anerkannt für seine Effektivität, Benutzerpasswörter vor verschiedenen Arten von Angriffen wie Brute-Force- und Regenbogentabellen-Angriffen zu schützen.
 
 ### Herausforderungen
 

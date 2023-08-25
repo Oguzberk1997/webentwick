@@ -8,7 +8,7 @@ Ich freue mich darauf, dich bei der Gestaltung und Umsetzung deiner Traumveranst
 
 ## Einrichtungshilfe
 
-Um das Projekt auf deinem lokalen Rechner einzurichten, folge diesen Schritten:
+Um das Projekt auf deinem lokalen Rechner einzurichten, folge diesen Schritten.:
 
 1. Klone das Repository:
 
